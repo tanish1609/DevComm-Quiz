@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechSprint | DevComm Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <main class="quiz-container">
+
+        <!-- HEADER -->
+        <header class="quiz-header">
+
+            <div class="brand">
+                <span class="brand-icon">⚡</span>
+
+                <div>
+                    <h1>TechSprint</h1>
+                    <p>DevComm Knowledge Challenge</p>
+                </div>
+            </div>
+
+            <div class="timer-box">
+                <span>⏱</span>
+                <span id="timer">05:00</span>
+            </div>
+
+        </header>
+
+
+        <!-- INTRO -->
+        <section class="intro-card" id="introScreen">
+
+            <div class="intro-icon">
+                🧠
+            </div>
+
+            <h2>Ready to test your tech knowledge?</h2>
+
+            <p>
+                Challenge yourself with questions covering programming,
+                AI, web development, cybersecurity and modern technology.
+            </p>
+
+            <div class="quiz-info">
+
+                <div>
+                    <strong>10</strong>
+                    <span>Questions</span>
+                </div>
+
+                <div>
+                    <strong>5</strong>
+                    <span>Minutes</span>
+                </div>
+
+                <div>
+                    <strong>MCQ</strong>
+                    <span>Format</span>
+                </div>
+
+            </div>
+
+            <button id="startBtn" class="primary-btn">
+                Start Quiz →
+            </button>
+
+        </section>
+
+
+        <!-- QUIZ -->
+        <section id="quizScreen" class="quiz-screen hidden">
+
+            <div class="progress-section">
+
+                <div class="progress-text">
+                    <span id="questionNumber">Question 1 of 10</span>
+                    <span id="progressPercent">10%</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="progressFill"></div>
+                </div>
+
+            </div>
+
+
+            <div class="question-card">
+
+                <div class="question-tag">
+                    QUESTION <span id="questionIndex">01</span>
+                </div>
+
+                <h2 id="questionText">
+                    Question goes here
+                </h2>
+
+                <div id="optionsContainer" class="options-container">
+                </div>
+
+            </div>
+
+
+            <div class="navigation">
+
+                <button id="prevBtn" class="secondary-btn">
+                    ← Previous
+                </button>
+
+                <button id="nextBtn" class="primary-btn">
+                    Next →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULT -->
+        <section id="resultScreen" class="result-screen hidden">
+
+            <div class="result-icon">
+                🏆
+            </div>
+
+            <p class="result-label">QUIZ COMPLETE</p>
+
+            <h2>Your Score</h2>
+
+            <div class="score">
+                <span id="scoreValue">0</span>
+                <span>/ 10</span>
+            </div>
+
+            <p id="resultMessage">
+                Great job!
+            </p>
+
+            <div id="answerReview" class="answer-review">
+            </div>
+
+            <button id="restartBtn" class="primary-btn">
+                Take Quiz Again ↻
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
